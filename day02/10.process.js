@@ -12,10 +12,11 @@ process.on('exit', function(code){
   console.log("exit: ", code);
 });
 
-for (var i = 0; i < 1500; i++) {
+for (var i = 0; i < 5; i++) {
   console.log(i);
 }
 
-console.log(`process.pid = ${process.pid}`);//当前进程的编号，当进程结束之后，进程号就不在是当前进程了
-
-process.exit(0);
+//当前进程的编号，当进程结束之后，进程号就不在是当前进程了
+console.log(`process.pid = ${process.pid}`);
+// 0 代表正常退出
+// process.exit(0);

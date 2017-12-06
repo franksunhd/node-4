@@ -14,4 +14,4 @@ eventOne.on('custom_event', function(obj){
 setTimeout(function(){
   //触发 自定义的事件, 并且传递参数
   eventOne.emit("custom_event", {value: 100});
-}, 5000);
+}, 2000);

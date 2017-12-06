@@ -8,10 +8,10 @@ fs.readFile("./nvm.md", "utf8", function(err, data){
   console.log(data);
 });
 
-/*
+
 //同步读取
-var data = fs.readFileSync("./nvm.md", "utf8");
-console.log(data);
-*/
+// var data = fs.readFileSync("./nvm.md", "utf8");
+// console.log(data);
+
 
 console.log("after fs.readFile...");

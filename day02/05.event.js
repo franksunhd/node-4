@@ -1,5 +1,6 @@
+// 引入一个事件模块
 var EventEmitter = require('events');
-
+// 创建事件发射对象
 var eventOne = new EventEmitter();
 
 //注册多个事件
@@ -12,15 +13,16 @@ eventOne.on('custom_event_2', function(value) {
 var handler = function(value){
   console.log("触发1111： ", value);
 };
+
 eventOne.on('custom_event_1', handler);
 
-eventOne.on('custom_event_1', function(value) {
-  console.log("触发1： ", value);
-
-  //事件回调函数的内部 this === eventOne
-  //移除一个回调函数
-  this.removeListener('custom_event_1', handler);
-});
+// eventOne.on('custom_event_1', function(value) {
+//   console.log("触发1： ", value);
+//
+//   //事件回调函数的内部 this === eventOne
+//   //移除一个回调函数
+//   this.removeListener('custom_event_1', handler);
+// });
 
 
 setTimeout(function() {

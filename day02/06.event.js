@@ -1,4 +1,4 @@
-
+// 引入一个 事件模块
 var EventEmitter = require('events');
 
 var eventOne = new EventEmitter();
@@ -12,4 +12,4 @@ eventOne.on("custom_event", function(){
 });
 
 //eventOne.listeners返回一个处理函数组成的数组
-eventOne.listeners('custom_event')[0]();
+eventOne.listeners('custom_event')[1]();

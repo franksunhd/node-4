@@ -1,8 +1,9 @@
 //process 代表当前进程
+// 第一个参数 是node 第二个参数是脚本文件 第三个是传入的参数
+console.log(process.argv);  //拿到命令行参数，是一个数组
 
-console.log(process.argv);//拿到命令行参数，是一个数组
-
-process.argv.forEach(function (value, index){
+process.argv.forEach(function(value, index){
+  //
   // console.log("index =" + index  +  "  value = " + value);
 
   //${name}  直接去变量name的值

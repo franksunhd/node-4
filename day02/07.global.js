@@ -12,3 +12,4 @@ console.log(value);
 
 //此处的a  只能在当前代码内使用，不算全局变量
 var a = 100;
+console.log(a);
